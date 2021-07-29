@@ -2,6 +2,7 @@ class Task08{
     public static void main(String[] args) {
         System.out.println(numberToHourMinute(71));
         System.out.println(numberToHourMinute(133));
+        System.out.println(numberToHourMinute(0));
     }
 
     public static String numberToHourMinute(int number) {
@@ -22,7 +23,7 @@ class Task08{
     }
 
     public static String pluralSingular(int hour, int minutes) {
-        if (hour > 1 && minutes > 1)
+        if (hour > 1 && minutes > 1 || hour == 0 && minutes == 0)
             return String.format("%d hours, %d minutes", hour, minutes);
         if (hour <= 1 && minutes > 1)
             return String.format("%d hour, %d minutes", hour, minutes);
