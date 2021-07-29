@@ -4,9 +4,12 @@ class Task10{
     public static void main(String[] args) {
         commonLetters("house", "computers");
         commonLetters("at", "computersa");
+        commonLetters("Eckard", "Berry");
 
     }
     public static void commonLetters(String string1, String string2) {
+        string1 = string1.toLowerCase();
+        string2 = string2.toLowerCase();
         Set<String> commons = new HashSet<String>();
         for (int i = 0; i < string2.length(); i++){
             char letterStr2 = string2.charAt(i);
