@@ -6,7 +6,7 @@ class Task09 {
     }
     public static void printVowels(String word) {
         word = word.toLowerCase();
-        Set<String> vowels = new HashSet<String>();
+        Set<String> vowels = new LinkedHashSet<String>();
         for (int i = 0; i < word.length(); i++){
             char letter = word.charAt(i);
             if (isVowel(letter))
